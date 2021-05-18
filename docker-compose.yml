@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   web-server:
-    build: ./GSB_PHP
+    build: ./html
     restart: always
     volumes:
       - "./html/:/var/www/html/"
