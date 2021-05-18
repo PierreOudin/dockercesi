@@ -1,14 +1,12 @@
 version: "3.7"
 services:
   web-server:
-    build:
-      dockerfile: php.Dockerfile
-      context: .
+    build: ./GSB_PHP
     restart: always
     volumes:
       - "./html/:/var/www/html/"
     ports:
-      - "8080:80"
+      - "80:80"
   mysql-server:
     image: mysql:8.0.19
     restart: always
